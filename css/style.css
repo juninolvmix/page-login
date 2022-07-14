@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body {
+    width: 62vw;
+
+    margin: 0 auto;
+
+    background-color: var(--background);
+}
+
+/* HEADER PAGE */
+
+.logo {
+    padding: 37px;
+}
+
+.side-image {
+    height: 100vh;
+
+    float: right;
+
+    clear: both;
+}
+
+/* BOX FORM */
+
+.content-form {
+    width: 572px;
+    height: 512px;
+
+    float: left;
+    margin: 143px 104px;
+
+    border-radius: 4px;
+
+    background-color: var(--form-background);
+}
+
+.side-image {
+    position: relative;
+}
+
+/* TITLE FORM */
+
+.title-form {
+    padding: 55px 0px 0px 119px;
+}
+
+.icon-title, .title {
+    display: inline;  
+}
+
+.icon-title {
+    position: relative;
+
+    top: 3.47px;
+}
+
+.title {
+    color: var(--text-title);
+
+    font: 600 24px 'Poppins', sans-serif;
+}
+
+.sub-title {
+    color: var(--text-base);
+
+    font: 500 16px 'Roboto', sans-serif;
+}
+
+/* CONTENT-FORM */
+
+#loginForm {
+    padding: 27px 0px 0px 119px;
+}
+
+.title-email, .title-password {
+    color: var(--text-base);
+
+    margin-bottom: 5px;
+
+    font: 500 16px 'Poppins', sans-serif;
+}
+
+#textEmail, #textPassword {
+    margin: 0px 0px 20px 0px;
+}
+
+[placeholder] {
+    color: var(--text-base);
+
+    padding-left: 45px;
+
+    font: 400 16px 'Roboto', sans-serif;
+}
+
+/* TEXT AREA */
+
+input[type=email], input[type=password] {
+    width: 290px;
+    height: 44px;
+
+    border: 1px solid var(--text-base);
+
+    border-radius: 4px;
+
+    background-color: var(--form-background);
+}
+
+input[type=email]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+
+    box-shadow: 0px 0px 0px 2px #FFDE88;
+}
+
+input[type=password]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+
+    box-shadow: 0px 0px 0px 2px #FFDE88;
+}
+
+/* ICONS TEXT AREA */
+
+input[type=email] {
+    background: 4.3% 50% url(../img/mail.svg) no-repeat;
+}
+
+input[type=email]:focus-within {
+    background: 4.3% 50% url(../img/mail-focus.svg) no-repeat;
+}
+
+input[type=password] {
+    background: 4.3% 50% url(../img/lock.svg) no-repeat;
+}
+
+input[type=password]:focus-within {
+    background: 4.3% 50% url(../img/lock-focus.svg) no-repeat;
+}
+
+/* CHECKBOX */
+
+#checkRemember {
+    width: 20px;
+    height: 20px;   
+}
+
+input[type=checkbox] {
+    appearance: none;
+
+    background-color: var(--form-background);
+    
+    border: 1px solid var(--text-base);
+    border-radius: 4px;
+}
+
+input[type=checkbox]:checked {
+    background-image: url(../img/check.svg);
+    background-color: var(--primary-color);
+
+    border: none;
+} 
+
+/* TEXT REMEMBER */
+
+.text-remember {
+    position: relative;
+    top: -3.8px;
+
+    color: var(--text-base);
+    font: 400 16px 'Roboto', sans-serif;
+}
+
+
+.remember-password {
+    position: relative;
+
+    top: -1.4px;
+    float: right;
+    padding-right: 114px;
+    
+    color: var(--primary-color);
+    font: 400 16px 'Poppins', sans-serif;
+}
+
+.remember-password > a {
+    text-decoration: none;
+
+    color: var(--primary-color);
+}
+
+.remember-password > a:hover {
+    text-decoration: underline;
+}
+
+/* BUTTON SUBMIT */
+
+input[type=submit] {
+    appearance: none;
+
+    width: 340px;
+    height: 51px;
+
+    margin-top: 15px;
+
+    border-radius: 4px;
+    border: none;
+
+    cursor: pointer;
+
+    background-color: var(--primary-color);
+}
+
+input[type=submit]:hover {
+    background-color: rgba(212, 204, 182, 0.5);
+    
+}
+
+input[value=ENTRAR] {
+    font: 600 18px 'Poppins', sans-serif;
+    letter-spacing: 1.3px;
+}
+
+input[value=ENTRAR]:hover {
+    color: var(--primary-color);
+}
+
+/* REGISTER */
+
+.text-register {
+    padding: 18px 0px 0px 16.5px;
+
+    color: var(--primary-color);
+    font: 400 18px 'Poppins', sans-serif;
+}
+
+.text-register > a {
+    text-decoration: none;
+
+    color: var(--primary-color);
+}
+
+.text-register > a:hover {
+    text-decoration: underline;
+}
